@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div class="front_Calc">
+        <h1>Calculator</h1>
+        <input id="num1" type="number"><br>
+        <input id="num2" type="number">
+        <p><select name="lt_func">
+            <option value="" selected disabled>Selecione uma operação</option>
+            <option value="soma">Somar</option>
+            <option value="sub">Subtrair</option>
+            <option value="div">Dividir</option>
+            <option value="mult">Multiplicar</option>
+        </select></p>
+        <input id="result" type="number" readonly>
+    </div>
+
+    <script class="back_Calc">
+        function result(){
+            document.getElementById("result").value = 
+            parseFloat(document.getElementById("num1").value) + parseFloat(document.getElementById("num2").value);
+        }
+    </script>
+</body>
+</html>

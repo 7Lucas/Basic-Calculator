@@ -1,0 +1,1 @@
+"clear" é uma palavra reservada ent pode dar conflito, nesse caso melhor usar "clean"
