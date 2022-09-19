@@ -16,8 +16,18 @@ function calc(){
     var result = document.getElementById('result').innerHTML;
     if(result){
         document.getElementById('result').innerHTML = eval(result); 
+        document.getElementById('history').innerHTML = result + ' = ' + eval(result);
     }
     /*else{
         document.getElementById('result').innerHTML = "Nothing..."
     }*/
 }
+
+/*function history(){
+    var result = document.getElementById('result').innerHTML;
+    if(result){
+        document.getElementById('result').innerHTML = eval(result); 
+    }
+    var  number = document.getElementById('history').innerHTML;
+    document.getElementById('result').innerHTML = number + num;
+}*/
