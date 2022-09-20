@@ -3,8 +3,12 @@ function insert(num){
     document.getElementById('result').innerHTML = number + num;
 }
 
-function clean(){
+function cleanCalc(){
     document.getElementById('result').innerHTML = "";
+}
+
+function cleanHistory(){
+    document.getElementById('history').innerHTML = "";
 }
 
 function back(){

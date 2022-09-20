@@ -11,13 +11,13 @@
 <body>
     <div class="container">
         <h1>Lukaz</h1>
-        <div class="flex-container">
+        <div class="flex">
             <div class="bloc">
                 <h2>Calculator</h2>
                 <p class="result" id="result"></p>
                 <table>
                     <tr>
-                        <td><button onclick="clean()">C</button></td>
+                        <td><button onclick="cleanCalc()">C</button></td>
                         <td><button onclick="back()">&lt;</button></td>
                         <td><button onclick="insert('/')">/</button></td>
                         <td><button onclick="insert('*')">x</button></td>
@@ -48,8 +48,9 @@
             </div>
 
            <div class="bloc">
-                <h1>History</h1>
-                <p class="result" id="history"></p>
+                <h2>History</h2>
+                <p class="history" id="history"></p>
+                <button style="width: 106px;" onclick="cleanHistory()">Clean</button>
             </div>
         </div>
     </div>
